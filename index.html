@@ -200,7 +200,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
             
-            Startseite
+            Home
           </a>
         </li>
       
@@ -210,7 +210,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
             
-            Archiv
+            Archives
           </a>
         </li>
       
@@ -253,6 +253,120 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/06/22/iTerm2-use/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="1987618girl">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2017/06/22/iTerm2-use/" itemprop="url">iTerm2 use</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-06-22T13:28:08+08:00">
+                2017-06-22
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>你应该知道的 iTerm2 使用方法–MAC终端工具<br>iTerm2<br>iTerm2 是 MAC 下最好的终端工具。可以简单的认为，iTerm2 是配置完毕开箱即用的 tmux。但 tmux 有以下一些缺点：<br>  ● 查找 terminal 的输出历史内容需要切换到 vim 模式。在该模式下复制使用的是 vim 的查找，增加了认知负担；<br>  ● 和各种工具兼容性比较差，尤其是 vim 和 emacs 的 powerline；<br>  ● 自有样式，与系统的样式冲突。<br>iTerm2 的一些特色功能如下：<br>标签变色<br>iTerm2 的标签的颜色会变化，以指示该 tab 当前的状态。当该标签有新输出的时候，标签会变成洋红色；新的输出长时间没有查看，标签会变成红色。可在设置中关掉该功能。<br>智能选中<br>在 iTerm2 中，双击选中，三击选中整行，四击智能选中（智能规则可配置），可以识别网址，引号引起的字符串，邮箱地址等。（很多时候双击的选中就已经很智能了）<br>在 iTerm2 中，选中即复制。即任何选中状态的字符串都被放到了系统剪切板中。<br>巧用 Command 键<br>按住⌘键:<br>  ● 可以拖拽选中的字符串；<br>  ● 点击 url：调用默认浏览器访问该网址；<br>  ● 点击文件：调用默认程序打开文件；<br>  ● 如果文件名是filename:42，且默认文本编辑器是 Macvim、Textmate或BBEdit，将会直接打开到这一行；<br>  ● 点击文件夹：在 finder 中打开该文件夹；<br>  ● 同时按住option键，可以以矩形选中，类似于vim中的ctrl v操作。<br>Meta 键<br>在emacs中，meta键的使用非常频繁，而 OSX 系统没有提供meta键。在 iTerm2 中可以选择左右两个的Option键作为meta键。官方推荐的配置如下图所示。右Option键依然是 OSX 的默认功能（输入特殊字符）。<br>iTerm2 meta key<br>Q: How do I make the option/alt key act like Meta or send escape codes?</p>
+<p>A: Go to Preferences-&gt;Profiles tab. Select your profile on the left, and then open the Keyboard tab. At the bottom is a set of buttons that lets you select the behavior of the Option key. For most users, Esc+ will be the best choice.</p>
+<p>常用快捷键<br>  ● 切换 tab：⌘+←, ⌘+→, ⌘+{, ⌘+}。⌘+数字直接定位到该 tab；<br>  ● 新建 tab：⌘+t；<br>  ● 顺序切换 pane：⌘+[, ⌘+]；<br>  ● 按方向切换 pane：⌘+Option+方向键；<br>  ● 切分屏幕：⌘+d 水平切分，⌘+Shift+d 垂直切分；<br>  ● 智能查找，支持正则查找：⌘+f。<br>iTerm2 find<br>自动完成<br>iTerm2 可以自动补齐命令，输入若干字符，按⌘+;弹出自动补齐窗口，列出曾经使用过的命令。<br>iTerm2 autocomplete<br>iTerm2 也可以使用历史记录，按⌘+Shift+h弹出历史粘贴记录窗口，⌘+Shift+;弹出历史命令记录窗口。<br>iTerm2 copy history<br>Exposé Tabs<br>⌘+Option+e全屏展示所有的 tab，可以搜索。<br>iTerm2 exposé<br>高亮当前鼠标的位置<br>一个标签页中开的窗口太多，有时候会找不到当前的鼠标，⌘+/找到它。<br>iTerm2 highlight<br>配色<br>你可以自由定制喜欢的配色，这里 收集了大量 iTerm2 的主题，你可以选择使用。我用的是Zenburn。在其 github repo 里下载对应的xxx.itermcolors文件，双击安装使用。<br>iTerm2 color<br>mosh<br>mosh 是全平台更好的 ssh 工具，更健壮，支持断续连接，支持除了 iPhone 之外的几乎任何平台。（iOS 让人爱不释手的优点，也正是它让人恨之入骨的缺点）<br>在 OSX 下安装brew install mobile-shell，其他平台请参考官方教程。<br>mosh<br>从上面来看，mosh 最主要的优点就是，断网了，休眠了，mosh的连接不会断。亲测一个 mosh 连接开了几个月一直没断。<br> iTerm2 tmux mosh mac</p>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/06/22/houyuxia/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -282,7 +396,7 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">Veröffentlicht am</span>
+                <span class="post-meta-item-text">Posted on</span>
               
               <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-06-22T12:34:58+08:00">
                 2017-06-22
@@ -394,7 +508,7 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">Veröffentlicht am</span>
+                <span class="post-meta-item-text">Posted on</span>
               
               <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-06-22T10:29:32+08:00">
                 2017-06-22
@@ -521,8 +635,8 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives/">
-                <span class="site-state-item-count">2</span>
-                <span class="site-state-item-name">Artikel</span>
+                <span class="site-state-item-count">3</span>
+                <span class="site-state-item-name">posts</span>
               </a>
             </div>
           
@@ -576,7 +690,7 @@
 
 
 <div class="powered-by">
-  Erstellt mit  <a class="theme-link" href="https://hexo.io">Hexo</a>
+  Powered by <a class="theme-link" href="https://hexo.io">Hexo</a>
 </div>
 
 <div class="theme-info">
